@@ -1,0 +1,53 @@
+  /*Navbar*/
+  .bg-black {
+    background-color: #000000; 
+  }
+  .navbar-dark .navbar-nav .nav-link {
+    color: #ffffff; 
+  }
+  .navbar-dark .navbar-nav .nav-link:hover {
+    background-color: #808080; 
+  }
+
+  /*Header*/
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .main-header {
+    text-align: center;
+    padding: 50px;
+    background-color: #f8f8f8;
+  }
+  
+  .main-header h1 {
+    margin: 0;
+    color: #333;
+    font-size: 2.5em;
+  }
+  
+  .main-header p {
+    color: #666;
+    font-size: 1em;
+    margin-top: 20px;
+  }
+
+  /* Carrusel */
+  .carousel-item {
+    height: 65vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  
+  .carousel-item img {
+    height: 500px; /* o cualquier altura que prefieras */
+  object-fit: contain; /* Esto asegura que las imágenes se ajusten completamente dentro del espacio */
+  width: 100%; /* Esto asegura que las imágenes siempre cubran el ancho completo del contenedor */
+  background-color: #000;
+  }
