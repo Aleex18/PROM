@@ -1,0 +1,54 @@
+@media only screen and (max-width: 767px) {
+    /* Cambios en estilos para móviles */
+    .navbar-nav {
+      margin-right: 0;
+    }
+  
+    .main-header h1 {
+      font-size: 24px; /* Tamaño más pequeño de fuente para el encabezado */
+    }
+  
+    .productos-section .card {
+      margin-bottom: 20px; /* Espacio extra entre tarjetas */
+    }
+  
+    .footer .row > div {
+      margin-bottom: 15px; /* Espacio extra en el footer */
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    /* Cambios en estilos para tablets */
+    .productos-section .card {
+      margin-bottom: 25px; /* Espacio entre tarjetas */
+    }
+  
+    .footer-logo {
+      width: 50%; /* Tamaño del logo en el footer */
+    }
+  }
+
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+    /* Cambios en estilos para pantallas pequeñas de escritorio */
+    .main-header h1 {
+      font-size: 28px; /* Tamaño de fuente para el encabezado */
+    }
+  
+    .productos-title {
+      font-size: 22px; /* Tamaño de fuente para el título de productos */
+    }
+  }
+
+@media only screen and (min-width: 1200px) {
+    /* Cambios en estilos para pantallas grandes de escritorio */
+    .main-header {
+      padding: 60px 0; /* Más padding para el encabezado principal */
+    }
+  
+    .footer {
+      padding: 40px 0; /* Más padding para el footer */
+    }
+  }
+
+    
+  
