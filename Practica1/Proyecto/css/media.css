@@ -50,5 +50,60 @@
     }
   }
 
+  @media print {
+    /* Estilos específicos para cuando se imprime la página */
+  
+    body {
+      font-family: 'Times New Roman', Times, serif; /* Una tipografia para mejor legibilidad */
+      color: black; /* Asegura que el texto se imprima en negro para legibilidad */
+    }
+  
+    a {
+      text-decoration: none; /* Elimina el subrayado de los enlaces para una impresión más limpia */
+      color: black; /* Enlaces en negro para no imprimir a color */
+    }
+  
+    /* Oculta elementos de navegación y controles de carrusel que no son necesarios */
+    nav, .carousel, footer, .navbar, .carousel-control-prev, .carousel-control-next {
+      display: none; /* Estos elementos no se imprimirán */
+    }
+  
+    /* Evita que los encabezados, secciones de productos y tarjetas se dividan entre páginas */
+    .main-header, .productos-section, .card {
+      page-break-inside: avoid; /* Evita cortes de página en medio de estos elementos */
+    }
+  
+    /* Aumenta el tamaño de fuente de los encabezados principales y títulos de productos para destacarlos */
+    .main-header h1, .productos-title {
+      font-size: 24pt;
+    }
+  
+    /* Aumenta el tamaño de fuente de los títulos de las tarjetas de producto */
+    .card-title {
+      font-size: 18pt;
+    }
+  
+    /* Ajusta el tamaño de fuente del texto dentro de las tarjetas de producto */
+    .card-text {
+      font-size: 12pt;
+    }
+  
+    /* Elimina el padding de la sección de productos para maximizar el uso del espacio */
+    .productos-section {
+      padding: 0; 
+    }
+  
+    /* Asegura que las imágenes no sean demasiado grandes y no se corten al imprimir */
+    img {
+      max-width: 100%; /* Limita el ancho de las imágenes al 100% */
+      page-break-inside: avoid; /* Evita que las imágenes se dividan entre páginas */
+    }
+  
+    /* Oculta los botones */
+    .btn {
+      display: none; /* Los botones no se imprimirán */
+    }
+  }
+  
     
   
